@@ -1,0 +1,185 @@
+/* Jeremy Meyers, 10/28/2023 */
+/* Background styles */
+body {
+	background-color: #F8F8FF;
+	background-image: linear-gradient(to bottom, #FFFFF0, #F8F8FF);
+	background-repeat: no-repeat;
+}
+#wrapper {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 250px;
+	max-width: 800px;
+	padding: 10px;
+	box-shadow: 0px 0px 10px gray;
+	background-color: #FFF8DC;
+	opacity: 0.95;
+	border-radius: 2px;
+}
+/* End background styles */
+/* Navigation styles */
+nav ul {
+	list-style-type: none;
+	text-align: center;
+}
+nav li {
+	display: inline;
+	background-color: dodgerblue;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 0 5px;
+	box-shadow: 0 5px 10px gray;
+}
+nav li:hover {
+	background-color: #0000CD;
+	color: white;
+}
+nav a {
+	text-decoration: none;
+	font-size: 1.5em;
+	font-weight: bold;
+	font-family: 'Courier New', monospace;
+}
+nav a:link {
+	color: white;
+}
+nav a:visited {
+	color: #FFF8DC;
+}
+nav a:hover {
+	color: white;
+}
+nav a:active {
+	color: #FF7F50;
+}
+/* End navigation styles */
+/* Broad content styles */
+h1 {
+	background-color: #F0E68C;
+	border-bottom: 5px solid black;
+	text-align: center;
+	padding: 5px;
+	margin: 0;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	box-shadow: 0 5px 10px gray;
+	text-shadow: 1px 1px 3px gray;
+	font-family: 'Courier New', monospace;
+	color: black;
+}
+h2 {
+	background-color: #F0E68C;
+	padding: 5px;
+	border-bottom: 5px solid black;
+	margin: 10px auto 0 auto;
+	box-shadow: 0 5px 10px gray;
+	text-shadow: 1px 1px 3px gray;
+	text-align: center;
+	font-family: 'Courier New', monospace;
+	color: black;
+}
+.content {
+	background-color: #F0E68C;
+	border-left: 5px solid black;
+	padding: 10px;
+	margin: 0;
+	box-shadow: 0 10px 10px gray;
+	border-bottom-right-radius: 10px;
+	font-family: Verdana, sans-serif;
+}
+.content ul {
+	margin: 5px;
+}
+.content a:link {
+	color: dodgerblue;
+}
+.content a:visited {
+	color: #0000CD;
+}
+.bold {
+	font-weight: bold;
+}
+.italic {
+	font-style: italic;
+}
+.small_date {
+	font-size: 0.75em;
+}
+.normal {
+	font-style: normal;
+}
+/* End broad content styles */
+/* Home page specific styles */
+.home_images {
+	height: 100%;
+	width: 30%;
+	display: block;
+	margin: auto;
+}
+#image_content {
+	border-left: 0;
+	border-bottom-left-radius: 10px;
+	padding: 0;
+	height: 100%;
+}
+/* End home styles */
+/* Portfolio page specific styles */
+.portfolio {
+	list-style-type: none;
+	padding: 0;
+	margin: 10px auto;
+	font-family: 'Courier New', monospace;
+	color: black;
+	font-size: 1.6em;
+	width: 85%;
+}
+.portfolio a:link {
+	text-decoration: none;
+	color: black;
+}
+.portfolio a:visited {
+	color: #444444;
+}
+.portfolio_images {
+	width: 100%;
+	border-bottom: 3px solid black;
+}
+figure {
+	border: 3px solid black;
+	border-radius: 3px;
+	margin: 10px auto;
+}
+figcaption {
+	text-align: center;
+	font-weight: bold;
+}
+/* End portfolio styles */
+/* Resume page specific styles */
+.resume_download {
+	border: 5px solid dodgerblue;
+}
+.resume_images {
+	width: 5%;
+}
+#contact {
+	text-align: center;
+}
+/* End resume styles */
+/* Footer styles */
+footer {
+	font-size: 0.75em;
+	font-style: italic;
+	text-align: center;
+}
+footer ul {
+	list-style-type: none;
+	padding: 0;
+}
+footer a:link {
+	color: dodgerblue;
+}
+footer a:visited {
+	color: #0000CD;
+}
+/* End footer styles */
