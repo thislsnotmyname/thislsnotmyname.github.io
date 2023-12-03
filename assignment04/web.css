@@ -1,0 +1,24 @@
+/* Jeremy Meyers, 09/25/2023 */
+body {
+	background-color: #FFFFFF;
+	color: #555555;
+}
+header {
+	background-color: #29485D;
+	color: #FFFFFF;
+}
+nav {
+	background-color: #C6D02F;
+}
+h1 {
+	margin-bottom: 0;
+}
+h2 {
+	color: #407386;
+}
+dt {
+	color: #0194B5;
+}
+.web {
+	color: #0194B5;
+}
