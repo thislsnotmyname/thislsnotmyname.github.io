@@ -1,0 +1,56 @@
+/* Jeremy Meyers, 10/02/2023 */
+body {
+	background-color: #FFFFFF;
+	color: #555555;
+	font-family: Arial, Helvetica, sans-serif;
+}
+header {
+	background-color: #29485D;
+	background-image: url(images/logo.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	line-height: 400%;
+	text-indent: 1em;
+	color: #FFFFFF;
+}
+nav {
+	background-color: #C6D02F;
+	font-weight: bold;
+}
+nav a {
+	text-decoration: none;
+}
+h1 {
+	margin-bottom: 0;
+	font-family: Georgia, 'Times New Roman', serif;
+}
+h2 {
+	color: #407386;
+	font-family: Georgia, 'Times New Roman', serif;
+}
+h3 {
+	color: #29485D;
+	font-family: Georgia, 'Times New Roman', serif;
+}
+ul {
+	list-style-image: url(images/marker.gif);
+}
+ul li {
+	line-height: 1.5;
+}
+dt {
+	color: #0194B5;
+}
+.web {
+	color: #0194B5;
+	font-weight: bold;
+}
+#contact {
+	font-size: 90%
+}
+footer {
+	font-size: 75%;
+	font-style: italic;
+	text-align: center;
+	font-family: Georgia, 'Times New Roman', serif;
+}
