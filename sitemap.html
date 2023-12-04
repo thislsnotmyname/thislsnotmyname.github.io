@@ -5,27 +5,48 @@
 		<title>Sitemap</title>
 		<meta charset="utf-8">
 		<style>
-			.folder:hover .files {
-				display: block;
-			}
-			.subfolder:hover .files {
-				display: none;
-			}
-			.subfolder:hover .filessub {
-				display: block;
+			* {
+				box-sizing: border-box;
 			}
 			img {
-				height: 70px;
-				width: 70px;
-			}
-			.files {
-				display: none;
-			}
-			ul li {
-				list-style-type: none;
+				height: 90px;
+				width: 90px;
 			}
 			ul li {
 				list-style-type: circle;
+			}
+			.folder, .subfolder {
+				list-style-type: none;
+			}
+			.folder, .subfolder {
+				height: 93px;
+				width: 93px;
+			}
+			.foldername {
+				width: 100%;
+				transform: translate(0,-55px);
+			}
+			.files, .subfiles {
+				display: none;
+			}
+			.folder:hover {
+				height: auto;
+				width: 30%;
+			}
+			.subfolder:hover {
+				height: auto;
+				width: 100%;
+			}
+			.folder:hover .files {
+				display: block;
+			}
+			.subfolder:hover .subfiles {
+				display: block;
+			}
+			footer {
+				font-size: 0.75em;
+				font-style: italic;
+				text-align: center;
 			}
 		</style>
 	</head>
@@ -39,43 +60,46 @@
 		<hr>
 		<main>
 			<ul>
-				<div class="folder"> <!-- assignment04 -->
-				<img src="folder.jpg">
+				<li class="folder"> <!-- assignment04 -->
+					<img src="folder.jpg">
+					<div class="foldername">assignment04</div>
 					<ul class="files">
 						<li><a href="http://thislsnotmyname.github.io/assignment04/index.html">/assignment04/index.html</a></li>
 						<li><a href="http://thislsnotmyname.github.io/assignment04/tracks.html">/assignment04/tracks.html</a></li>
 						<li><a href="http://thislsnotmyname.github.io/assignment04/web.css">/assignment04/web.css</a></li>
 					</ul>
-				</div>
-				<div class="folder"> <!-- assignment05 -->
-				<img src="folder.jpg">
+				</li>
+				<li class="folder"> <!-- assignment05 -->
+					<img src="folder.jpg">
+					<div class="foldername">assignment05</div>
 					<ul class="files">
-						<li>
-							<div class="folder subfolder"> <!-- images -->
+						<li class="subfolder"> <!-- images -->
 							<img src="folder.jpg">
-								<ul class="files filessub">
-									<li><a href="http://thislsnotmyname.github.io/assignment05/images/facultyhero.jpg">/assignment05/images/facultyhero.jpg</a></li>
-									<li><a href="http://thislsnotmyname.github.io/assignment05/images/homehero.jpg">/assignment05/images/homehero.jpg</a></li>
-									<li><a href="http://thislsnotmyname.github.io/assignment05/images/logo.jpg">/assignment05/images/logo.jpg</a></li>
-									<li><a href="http://thislsnotmyname.github.io/assignment05/images/logo.png">/assignment05/images/logo.png</a></li>
-									<li><a href="http://thislsnotmyname.github.io/assignment05/images/marker.gif">/assignment05/images/marker.gif</a></li>
-									<li><a href="http://thislsnotmyname.github.io/assignment05/images/trackshero.jpg">/assignment05/images/trackshero.jpg</a></li>
-								</ul>
-							</div>
+							<div class="foldername">images</div>
+							<ul class="subfiles">
+								<li><a href="http://thislsnotmyname.github.io/assignment05/images/facultyhero.jpg">/assignment05/images/facultyhero.jpg</a></li>
+								<li><a href="http://thislsnotmyname.github.io/assignment05/images/homehero.jpg">/assignment05/images/homehero.jpg</a></li>
+								<li><a href="http://thislsnotmyname.github.io/assignment05/images/logo.jpg">/assignment05/images/logo.jpg</a></li>
+								<li><a href="http://thislsnotmyname.github.io/assignment05/images/logo.png">/assignment05/images/logo.png</a></li>
+								<li><a href="http://thislsnotmyname.github.io/assignment05/images/marker.gif">/assignment05/images/marker.gif</a></li>
+								<li><a href="http://thislsnotmyname.github.io/assignment05/images/trackshero.jpg">/assignment05/images/trackshero.jpg</a></li>
+							</ul>
 						</li>
 						<li><a href="http://thislsnotmyname.github.io/assignment05/faculty.html">/assignment05/faculty.html</a></li>
 						<li><a href="http://thislsnotmyname.github.io/assignment05/index.html">/assignment05/index.html</a></li>
 						<li><a href="http://thislsnotmyname.github.io/assignment05/tracks.html">/assignment05/tracks.html</a></li>
 						<li><a href="http://thislsnotmyname.github.io/assignment05/web.css">/assignment05/web.css</a></li>
 					</ul>
-				</div>
-				<div class="folder"> <!-- assignment06 -->
-				<img src="folder.jpg">
+				</li>
+				<li class="folder"> <!-- assignment06 -->
+					<img src="folder.jpg">
+					<div class="foldername">assignment06</div>
 					<ul class="files">
 						<li>
-							<div class="folder"> <!-- images -->
+							<div class="subfolder"> <!-- images -->
 							<img src="folder.jpg">
-								<ul class="files">
+							<div class="foldername">images</div>
+								<ul class="subfiles">
 									<li><a href="http://thislsnotmyname.github.io/assignment06/images/facultyhero.jpg">/assignment06/images/facultyhero.jpg</a></li>
 									<li><a href="http://thislsnotmyname.github.io/assignment06/images/homehero.jpg">/assignment06/images/homehero.jpg</a></li>
 									<li><a href="http://thislsnotmyname.github.io/assignment06/images/logo.jpg">/assignment06/images/logo.jpg</a></li>
@@ -90,22 +114,22 @@
 						<li><a href="http://thislsnotmyname.github.io/assignment06/tracks.html">/assignment06/tracks.html</a></li>
 						<li><a href="http://thislsnotmyname.github.io/assignment06/web.css">/assignment06/web.css</a></li>
 					</ul>
-				</div>
-				<div class="folder"> <!-- assignment07 -->
-				<img src="folder.jpg">
+				</li>
+				<li class="folder"> <!-- assignment07 -->
+					<img src="folder.jpg">
+					<div class="foldername">assignment07</div>
 					<ul class="files">
-						<li>
-							<div class="folder"> <!-- images -->
+						<li class="subfolder"> <!-- images -->
 							<img src="folder.jpg">
-								<ul class="files">
-									<li><a href="http://thislsnotmyname.github.io/assignment07/images/facultyhero.jpg">/assignment07/images/facultyhero.jpg</a></li>
-									<li><a href="http://thislsnotmyname.github.io/assignment07/images/homehero.jpg">/assignment07/images/homehero.jpg</a></li>
-									<li><a href="http://thislsnotmyname.github.io/assignment07/images/logo.jpg">/assignment07/images/logo.jpg</a></li>
-									<li><a href="http://thislsnotmyname.github.io/assignment07/images/logo.png">/assignment07/images/logo.png</a></li>
-									<li><a href="http://thislsnotmyname.github.io/assignment07/images/marker.gif">/assignment07/images/marker.gif</a></li>
-									<li><a href="http://thislsnotmyname.github.io/assignment07/images/trackshero.jpg">/assignment07/images/trackshero.jpg</a></li>
-								</ul>
-							</div>
+							<div class="foldername">images</div>
+							<ul class="subfiles">
+								<li><a href="http://thislsnotmyname.github.io/assignment07/images/facultyhero.jpg">/assignment07/images/facultyhero.jpg</a></li>
+								<li><a href="http://thislsnotmyname.github.io/assignment07/images/homehero.jpg">/assignment07/images/homehero.jpg</a></li>
+								<li><a href="http://thislsnotmyname.github.io/assignment07/images/logo.jpg">/assignment07/images/logo.jpg</a></li>
+								<li><a href="http://thislsnotmyname.github.io/assignment07/images/logo.png">/assignment07/images/logo.png</a></li>
+								<li><a href="http://thislsnotmyname.github.io/assignment07/images/marker.gif">/assignment07/images/marker.gif</a></li>
+								<li><a href="http://thislsnotmyname.github.io/assignment07/images/trackshero.jpg">/assignment07/images/trackshero.jpg</a></li>
+							</ul>
 						</li>
 						<li><a href="http://thislsnotmyname.github.io/assignment07/faculty.html">/assignment07/faculty.html</a></li>
 						<li><a href="http://thislsnotmyname.github.io/assignment07/index.html">/assignment07/index.html</a></li>
@@ -113,43 +137,43 @@
 						<li><a href="http://thislsnotmyname.github.io/assignment07/web.css">/assignment07/web.css</a></li>
 					</ul>
 				</div>
-				<div class="folder"> <!-- assignment08 -->
-				<img src="folder.jpg">
+				<li class="folder"> <!-- assignment08 -->
+					<img src="folder.jpg">
+					<div class="foldername">assignment08</div>
 					<ul class="files">
-						<li>
-							<div class="folder"> <!-- images -->
+						<li class="subfolder"> <!-- images -->
 							<img src="folder.jpg">
-								<ul class="files">
-									<li><a href="http://thislsnotmyname.github.io/assignment08/images/facultyhero.jpg">/assignment08/images/facultyhero.jpg</a></li>
-									<li><a href="http://thislsnotmyname.github.io/assignment08/images/homehero.jpg">/assignment08/images/homehero.jpg</a></li>
-									<li><a href="http://thislsnotmyname.github.io/assignment08/images/logo.jpg">/assignment08/images/logo.jpg</a></li>
-									<li><a href="http://thislsnotmyname.github.io/assignment08/images/logo.png">/assignment08/images/logo.png</a></li>
-									<li><a href="http://thislsnotmyname.github.io/assignment08/images/marker.gif">/assignment08/images/marker.gif</a></li>
-									<li><a href="http://thislsnotmyname.github.io/assignment08/images/trackshero.jpg">/assignment08/images/trackshero.jpg</a></li>
-								</ul>
-							</div>
+							<div class="foldername">images</div>
+							<ul class="subfiles">
+								<li><a href="http://thislsnotmyname.github.io/assignment08/images/facultyhero.jpg">/assignment08/images/facultyhero.jpg</a></li>
+								<li><a href="http://thislsnotmyname.github.io/assignment08/images/homehero.jpg">/assignment08/images/homehero.jpg</a></li>
+								<li><a href="http://thislsnotmyname.github.io/assignment08/images/logo.jpg">/assignment08/images/logo.jpg</a></li>
+								<li><a href="http://thislsnotmyname.github.io/assignment08/images/logo.png">/assignment08/images/logo.png</a></li>
+								<li><a href="http://thislsnotmyname.github.io/assignment08/images/marker.gif">/assignment08/images/marker.gif</a></li>
+								<li><a href="http://thislsnotmyname.github.io/assignment08/images/trackshero.jpg">/assignment08/images/trackshero.jpg</a></li>
+							</ul>
 						</li>
 						<li><a href="http://thislsnotmyname.github.io/assignment08/faculty.html">/assignment08/faculty.html</a></li>
 						<li><a href="http://thislsnotmyname.github.io/assignment08/index.html">/assignment08/index.html</a></li>
 						<li><a href="http://thislsnotmyname.github.io/assignment08/tracks.html">/assignment08/tracks.html</a></li>
 						<li><a href="http://thislsnotmyname.github.io/assignment08/web.css">/assignment08/web.css</a></li>
 					</ul>
-				</div>
-				<div class="folder"> <!-- assignment09 -->
-				<img src="folder.jpg">
+				</li>
+				<li class="folder"> <!-- assignment09 -->
+					<img src="folder.jpg">
+					<div class="foldername">assignment09</div>
 					<ul class="files">
-						<li>
-							<div class="folder"> <!-- images -->
+						<li class="subfolder"> <!-- images -->
 							<img src="folder.jpg">
-								<ul class="files">
-									<li><a href="http://thislsnotmyname.github.io/assignment09/images/facultyhero.jpg">/assignment09/images/facultyhero.jpg</a></li>
-									<li><a href="http://thislsnotmyname.github.io/assignment09/images/homehero.jpg">/assignment09/images/homehero.jpg</a></li>
-									<li><a href="http://thislsnotmyname.github.io/assignment09/images/logo.jpg">/assignment09/images/logo.jpg</a></li>
-									<li><a href="http://thislsnotmyname.github.io/assignment09/images/logo.png">/assignment09/images/logo.png</a></li>
-									<li><a href="http://thislsnotmyname.github.io/assignment09/images/marker.gif">/assignment09/images/marker.gif</a></li>
-									<li><a href="http://thislsnotmyname.github.io/assignment09/images/trackshero.jpg">/assignment09/images/trackshero.jpg</a></li>
-								</ul>
-							</div>
+							<div class="foldername">images</div>
+							<ul class="subfiles">
+								<li><a href="http://thislsnotmyname.github.io/assignment09/images/facultyhero.jpg">/assignment09/images/facultyhero.jpg</a></li>
+								<li><a href="http://thislsnotmyname.github.io/assignment09/images/homehero.jpg">/assignment09/images/homehero.jpg</a></li>
+								<li><a href="http://thislsnotmyname.github.io/assignment09/images/logo.jpg">/assignment09/images/logo.jpg</a></li>
+								<li><a href="http://thislsnotmyname.github.io/assignment09/images/logo.png">/assignment09/images/logo.png</a></li>
+								<li><a href="http://thislsnotmyname.github.io/assignment09/images/marker.gif">/assignment09/images/marker.gif</a></li>
+								<li><a href="http://thislsnotmyname.github.io/assignment09/images/trackshero.jpg">/assignment09/images/trackshero.jpg</a></li>
+							</ul>
 						</li>
 						<li><a href="http://thislsnotmyname.github.io/assignment09/contact.html">/assignment09/contact.html</a></li>
 						<li><a href="http://thislsnotmyname.github.io/assignment09/faculty.html">/assignment09/faculty.html</a></li>
@@ -157,9 +181,10 @@
 						<li><a href="http://thislsnotmyname.github.io/assignment09/tracks.html">/assignment09/tracks.html</a></li>
 						<li><a href="http://thislsnotmyname.github.io/assignment09/web.css">/assignment09/web.css</a></li>
 					</ul>
-				</div>
-				<div class="folder"> <!-- midterm -->
-				<img src="folder.jpg">
+				</li>
+				<li class="folder"> <!-- midterm -->
+					<img src="folder.jpg">
+					<div class="foldername">midterm</div>
 					<ul class="files">
 						<li><a href="http://thislsnotmyname.github.io/midterm/Meyers_Jeremy_Resume.pdf">/midterm/Meyers_Jeremy_Resume.pdf</a></li>
 						<li><a href="http://thislsnotmyname.github.io/midterm/assignment05.png">/midterm/assignment05.png</a></li>
@@ -173,7 +198,8 @@
 						<li><a href="http://thislsnotmyname.github.io/midterm/resume.html">/midterm/resume.html</a></li>
 						<li><a href="http://thislsnotmyname.github.io/midterm/styles.css">/midterm/styles.css</a></li>
 					</ul>
-				</div>
+				</li>
+				<li><a href="http://thislsnotmyname.github.io/README.md">README.md</a></li>
 				<li><a href="http://thislsnotmyname.github.io/favicon.ico">favicon.ico</a></li>
 				<li><a href="http://thislsnotmyname.github.io/folder.jpg">folder.jpg</a></li>
 				<li><a href="http://thislsnotmyname.github.io/index.html">index.html</a></li>
@@ -182,9 +208,9 @@
 			</ul>
 		</main>
 		<footer>
-			
+			<a href="https://www.irasutoya.com/">Folder image created by みふねたかし &lpar;Takashi Mifune&rpar; of Irasutoya.</a>
 			<br>
-			<a href="mailto:jmeyer98@stumail.jccc.edu">Email Me!</a>
+			<a href="mailto:jmeyer98@stumail.jccc.edu">jmeyer98@stumail.jccc.edu</a>
 		</footer>
 	</body>
 </html>
