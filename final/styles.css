@@ -1,0 +1,369 @@
+/* Jeremy Meyers, 12/11/2023, Final Project, Stylesheet */
+/* Background styles */
+body { /* Adds a slight gradient to the background */
+	background-color: #090909;
+	background-image: linear-gradient(to bottom, #000000, #090909);
+	background-repeat: no-repeat;
+}
+#wrapper { /* Governs the content "window" */
+	min-width: 350px;
+	max-width: 800px;
+	padding: 5px;
+	box-shadow: 1px 1px 10px #CCCCCC;
+	background-color: #191919;
+	opacity: 0.95;
+	border-radius: 2px;
+	color: white;
+}
+/* End background styles */
+/* Navigation styles */
+nav { /* Nav bar, top and bottom */
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	border-radius: 1px;
+	margin: 10px 0 0;
+}
+nav ul {
+	list-style-type: none;
+	text-align: center;
+}
+nav li {
+	display: inline;
+	padding: 5px;
+	margin: 0 5px;
+}
+nav li:hover {
+	text-decoration: underline;
+	color: white;
+}
+nav a {
+	text-decoration: none;
+	font-size: 1.5em;
+	font-weight: 100;
+	font-family: "Abel", Helvetica, sans-serif;
+	font-variant: small-caps;
+}
+nav a:link {
+	color: white;
+}
+nav a:visited {
+	color: #FFF8DC;
+}
+nav a:hover {
+	color: white;
+}
+nav a:active {
+	color: #FF7F50;
+}
+/* End navigation styles */
+/* Broad content styles */
+h1 { /* Overall topic of the page */
+	border: 1px solid gray;
+	border-width: 0 1px 1px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: #111111;
+	text-align: center;
+	padding: 10px;
+	margin: 0 0 10px;
+	text-shadow: 1px 1px 3px black;
+	font-size: 1.5em;
+	font-family: 'Courier New', monospace;
+	color: white;
+}
+h2 { /* Subtopics, splits page into categories */
+	padding: 5px;
+	border-bottom: 1px solid gray;
+	margin: 0 0 10px;
+	text-shadow: 1px 1px 3px gray;
+	text-align: center;
+	font-family: 'Courier New', monospace;
+	color: white;
+}
+.content { /* General content style, mostly governs the background of the content */
+	background-color: #111111;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	border-radius: 1px;
+	padding: 10px;
+	margin: 0 10px 10px;
+	box-shadow: 0 1px 10px gray;
+	font-family: Verdana, sans-serif;
+	font-size: 0.95em;
+	color: white;
+	line-height: 1.6;
+}
+.content::first-letter { /* Accentuates the first letter of the first word of the paragraph like old-timey printing press books */
+	font-size: 1.5em;
+}
+.content a:link {
+	color: dodgerblue;
+}
+.content a:visited {
+	color: #C8A2C8; /* A nice lilac color */
+}
+.contentwimg { /* Works in conjunction with .content as an addon that aligns images and text with flexbox */
+	height: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+.contentwimg p { /* Styles the text beside or inbetween the images without using another class */
+	align-self: center;
+	font-size: 0.95em;
+	padding: 10px;
+	max-width: 65%;
+}
+figure.figimages { /* Styles figures and their text */
+	width: 33%;
+	padding: 0;
+	margin: 0;
+	align-self: center;
+	font-style: italic;
+	text-align: center;
+	font-size: 0.75em;
+}
+img.figimages { /* Styles figure images */
+	padding-bottom: 5px;
+	border-bottom: 1px solid gray;
+	width: 100%;
+	max-width: 150px;
+	max-height: 150px;
+}
+.bold { /* Bolds text, mostly used on spans */
+	font-weight: bold;
+}
+.center { /* Centers text */
+	text-align: center;
+}
+.firstword { /* Accentuates the first word of the paragraph like old-timey printing press books */
+	font-variant: small-caps;
+	font-size: 1.25em;
+}
+.backtotop { /* This class lets the "Back to top" match the table of contents style */
+	color: white;
+	font-family: "Abel", Helvetica, sans-serif;
+	font-size: 1.3em;
+	font-variant: small-caps;
+}
+.backtotop:link {
+	text-decoration: none;
+	color: white;
+}	
+.backtotop:hover {
+	text-decoration: underline;
+}	
+.backtotop:visited {
+	color: #FFF8DC;
+}
+.backtotop:active {
+	color: #FF7F50;
+}
+/* End broad content styles */
+/* Issue page styles */
+.steps { /* This class allows the table of contents look like a navigation pane. Though it is vertical to accentuate the number of steps */
+	width: 80%;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	border-radius: 1px;
+	margin: 10px auto;
+}
+.steps ol {
+	text-align: center;
+}
+.steps ol ::marker { 
+	color: white;
+	font-family: "Abel", Helvetica, sans-serif;
+	font-size: 1.1em;
+}
+.steps li {
+	padding: 2px;
+	margin: 0 5px;
+	font-size: 1.25em;
+}
+.steps li:hover {
+	text-decoration: underline;
+	color: white;
+}
+.steps a {
+	text-decoration: none;
+	font-weight: 100;
+	font-family: "Abel", Helvetica, sans-serif;
+	font-variant: small-caps;
+}
+.steps a:link {
+	color: white;
+}
+.steps a:visited {
+	color: #FFF8DC;
+}
+.steps a:hover {
+	color: white;
+}
+.steps a:active {
+	color: #FF7F50;
+}
+/* End issue page styles */
+/* Form page styles */
+form { /* Gives a general style for the form */
+	font-family: Verdana, sans-serif;
+	margin: 0 auto;
+	padding: 10px;
+}
+label { /* Makes the labels readable over the background */
+	color: white;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	padding: 5px;
+}
+input, select, textarea { /* Makes form inputs dark to not break readers' eyes */
+	display: block;
+	margin-bottom: 10px;
+	background-color: #222222;
+	color: white;
+	width: 100%;
+	font-weight: bold;
+}
+.require { /* This class styles required form items separately */
+	font-weight: bold;
+	color: rgba(255, 210, 210, 100);
+}
+#submit, #reset { /* Separately styles submit and reset buttons to center them */
+	margin: 0 auto;
+	width: 75%;
+}
+#formbackground { /* Sets the form's background image */
+	background-image: url(images/formbackground.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+/* End form page styles */
+/* Credits page styles */
+#creditshero { /* Sets hero image for the credits page */
+	height: 400px;
+	background-image: url(images/robertbweide.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.creditsections { /* This class allows the table of contents to look like another navigation pane */
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	border-radius: 1px;
+	margin: 10px auto;
+}
+.creditsections ul {
+	text-align: center;
+	list-style-type: none;
+}
+.creditsections li {
+	display: inline;
+	padding: 2px;
+	margin: 0 5px;
+	font-size: 1.25em;
+}
+.creditsections li:hover {
+	text-decoration: underline;
+	color: white;
+}
+.creditsections a {
+	text-decoration: none;
+	font-weight: 100;
+	font-family: "Abel", Helvetica, sans-serif;
+	font-variant: small-caps;
+}
+.creditsections a:link {
+	color: white;
+}
+.creditsections a:visited {
+	color: #FFF8DC;
+}
+.creditsections a:hover {
+	color: white;
+}
+.creditsections a:active {
+	color: #FF7F50;
+}
+#creditsbackground { /* Sets the credits panel's background */
+	background-image: url(images/creditsbackground.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+#creditsbackground ul { /* Erases some styles of .content while allowing text styles to stay */
+	background-color: rgba(0, 0, 0, 0);
+	box-shadow: none;
+	border: none;
+	margin-left: 10px;
+}
+#creditsbackground li { /* Makes list items readable over the background */
+	color: white;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 5px;
+}
+.subheading { /* Erases some list item styles to style subheadings like h2 */
+	background-color: rgba(0, 0, 0, 0) !important;
+	list-style-type: none;
+}
+/* End credits page styles */
+/* Footer styles */
+footer { /* Makes the footer a little smaller and separate from the rest of the page */
+	font-size: 0.75em;
+	font-style: italic;
+	text-align: center;
+}
+footer a:link {
+	color: dodgerblue;
+}
+footer a:visited {
+	color: #C8A2C8;
+}
+/* End footer styles */
+/* Media queries */
+@media (min-width: 800px) { /* Tablet styles */
+	#wrapper { /* Adds a bit more space and increases box-shadow */
+		max-width: 1200px;
+		padding: 10px;
+		box-shadow: 3px 3px 10px #CCCCCC;
+	}
+	h1 { /* Makes header normal size */
+		padding: 5px;
+		font-size: 2em;
+	}
+	.content { /* Makes content text normal size */
+		font-size: 1em;
+	}
+	.contentwimg p { /* Makes content text normal size */
+		font-size: 1em;
+	}
+	img.figimages { /* Makes figure images a little bigger */
+		max-width: 200px;
+		max-height: 200px;
+	}
+	form { /* Makes form elements sit in a grid rather than on top of each other */
+		display: grid;
+		grid-template-rows: auto;
+		grid-template-columns: 1fr 1fr;
+		gap: 1em;
+	}
+	label { /* Gives label text more room to breathe */
+		padding: 8px;
+	}
+	label[for=submit], label[for=reset] { /* Brings submit and reset labels to the center */
+		text-align: right;
+	}
+	#submit, #reset { /* Makes submit and reset buttons sit properly in the new grid format */
+		margin: 0 5px;
+		width: 50%;
+	}
+}
+@media (min-width: 1200px) { /* Desktop styles */
+	#wrapper { /* Centers the content */
+		width: 75%;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 10px;
+		box-shadow: 3px 3px 10px #CCCCCC;
+	}
+}
+/* End media queries */

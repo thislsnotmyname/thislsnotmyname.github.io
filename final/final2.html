@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!-- Jeremy Meyers, 12/11/2023, Final Project, Issue page -->
+<html lang="en">
+    <head>
+        <title>How To Rubik&apos;s Cube - Beginner&apos;s Method</title>
+        <meta charset="utf-8">
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="styles.css" type="text/css">
+		<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="wrapper">
+            <nav>
+                <ul>
+                    <li><a href="final1.html">Home</a></li>
+                    <li><a href="final2.html">Beginner&apos;s Method</a></li>
+                    <li><a href="final3.html">Contact</a></li>
+					<li><a href="final4.html">Credits</a></li>
+                </ul>
+            </nav>
+            <header>
+                <h1>Beginner&apos;s Method</h1>
+            </header>
+            <main>
+				<h2 id="top">Table of Contents</h2>
+				<div class="steps">
+					<ol>
+						<li><a href="#notation">Notation</a></li>
+						<li><a href="#daisy">Daisy</a></li>
+						<li><a href="#firstlayer">First Layer</a></li>
+						<li><a href="#secondlayer">Second Layer</a></li>
+						<li><a href="#yellowcross">Yellow Cross</a></li>
+						<li><a href="#yellowcorners">Orient Yellow Corners</a></li>
+						<li><a href="#permutecorners">Permute Last Corners</a></li>
+						<li><a href="#permuteedges">Permute Last Edges</a></li>
+						<li><a href="#done">You&apos;re Done!</a></li>
+						<li><a href="#movingon">Moving On</a></li>
+					</ol>
+				</div>
+				<h2 id="notation">Notation</h2>
+				<p class="content">
+					<span class="firstword">We</span> will cover each step in completing a Rubik&apos;s Cube, but first, let&apos;s become familiar with notation. 
+					<br><br>
+					One typical notation includes the letters: L, U, R, D, F, and B. 
+					These stand for moves that turn the &lpar;<span class="bold">L</span>&rpar;eft, &lpar;<span class="bold">U</span>&rpar;p, &lpar;<span class="bold">R</span>&rpar;ight, &lpar;<span class="bold">D</span>&rpar;own, &lpar;<span class="bold">F</span>&rpar;ront, and &lpar;<span class="bold">B</span>&rpar;ack faces respectively.
+					These moves on their own signify a clockwise rotation. 
+					<br>
+					Adding a prime symbol to a move &lpar;e.g., U′&rpar; signifies a counterclockwise rotation, which is also called a prime move.
+					Adding the number two &lpar;e.g., U2&rpar; means to do that move twice.
+					<br><br>
+					Something that is a little less common to see is lowercase letters: l, u, r, d, f, b.
+					These mean to turn that layer and the corresponding middle layer&mdash;the first two layers.
+					<br><br>
+					A few more letters that are less common are x, y, z, M, S, and E.
+					x, y, and z moves simply rotate the cube without affecting any sides.
+					The rest stand for &lpar;<span class="bold">M</span>&rpar;iddle, &lpar;<span class="bold">S</span>&rpar;lice, and &lpar;<span class="bold">E</span>&rpar;quator.
+					We will explain how to do these as they come up.
+				</p>
+				<h2 id="daisy">Daisy</h2>
+				<div class="content contentwimg">
+					<p>
+						First, we will make a "daisy" by orienting all the white edges to the yellow side with white facing up.
+						Once all the white edges are facing up, we can align each white edge to its other center piece and do an R2 move to place each edge on the white side.
+						This creates a white cross on the bottom.
+					</p>
+					<figure class="figimages">
+						<img src="images/daisy.svg" class="figimages" alt="A Rubik's Cube with a daisy-like pattern.">
+						<figcaption>A daisy-like pattern</figcaption>
+					</figure>
+				</div>
+				<h2 id="firstlayer">First Layer</h2>
+				<div class="content contentwimg">
+					<figure class="figimages">
+						<img src="images/firstlayer.svg" class="figimages" alt="A Rubik's Cube with a misaligned white corner.">
+						<figcaption>A misaligned white corner</figcaption>
+					</figure>
+					<p>
+						Next, we will learn a useful algorithm that will help us all the way to the end: <span class="bold">&lsqb;R U R′ U′&rsqb;</span>.
+						You can apply this algorithm to many different situations.
+						In this case, we will use it to complete the first layer.
+						<br><br>
+						Move one of the white corners over the space it is supposed to be, then, holding it on the right side, use the algorithm &lsqb;R U R′ U′&rsqb; to insert it into place.
+						Repeat this algorithm until the white side of the corner is united with the white side; it may take up to five times.
+						Rinse and repeat for the other three white corners.
+						<br><br>
+						Note: If one of the corners is already in place but is misoriented, simply use the algorithm until it is corrected.
+					</p>
+				</div>
+				<h2 id="secondlayer">Second Layer</h2>
+				<div class="content contentwimg">
+					<p>
+						Next, we will complete the second layer. 
+						Align an edge that belongs in the second layer on top of its appropriate center piece like the image.
+						<br><br>
+						&lpar;These next two algorithms include y rotations. 
+						For a y rotation rotate the cube so that the front side is on the left, but for a y′ rotation rotate so that the front side is on the right.&rpar;
+						<br><br>
+						Then, move the edge so that its top color is in line with its center piece and do the moves <span class="bold">&lsqb;L′ U L U y′ R U′ R′&rsqb;</span>.
+						If the edge is the on the left side rather than the right like in the picture, do the moves <span class="bold">&lsqb;R U′ R′ U′ y L′ U L′&rsqb;</span>.
+						Rinse and repeat for the other three edges.
+						<br><br>
+						Note: If the last two edges are in the second layer but not in the right places, insert a yellow edge into the second layer and then you can insert the second layer edge in the correct slot.
+					</p>
+					<figure class="figimages">
+						<img src="images/secondlayer.svg" class="figimages" alt="A Rubik's Cube with one layer completed.">
+						<figcaption>Aligning the middle edges</figcaption>
+					</figure>
+				</div>
+				<h2 id="yellowcross">Yellow Cross</h2>
+				<div class="content contentwimg">
+					<figure class="figimages">
+						<img src="images/yellowcrossL.svg" class="figimages" alt="A Rubik's Cube with an L case.">
+						<figcaption>The L case</figcaption>
+					</figure>
+					<p>
+						Now that we have completed the first two layers, we will get started on the last layer by making a yellow cross.
+						If we only pay attention to the yellow edges, there will be only three cases to worry about, affectionately called the dot, the line, and the L.
+						<br><br>
+						For the dot, use the algorithm we learned at the start, with a little bit more: <span class="bold">F &lsqb;R U R′ U′&rsqb; F′</span>.
+						<br>
+						This will set up into the L case, where you will do a similar algorithm: <span class="bold">f &lsqb;R U R′ U′&rsqb; f′</span>.
+						&lpar;Remember, a lowercase letter means to turn the first two layers.&rpar;
+						<br>
+						If you have the line case, you will do the same thing as the dot case: <span class="bold">F &lsqb;R U R′ U′&rsqb; F′</span>.
+					</p>
+				</div>
+				<h2 id="yellowcorners">Orient Yellow Corners</h2>
+				<div class="content contentwimg">
+					<p>
+						Next, we will finish the yellow face. 
+						Flip the cube over so that the yellow side is on the bottom.
+						<br><br>
+						To orient each corner, we will use the algorithm &lsqb;R U R′ U′&rsqb; until the bottom-right yellow corner&apos;s yellow side faces down.
+						After the corner is oriented, use a D move to move on to the next corner.
+						Repeat this until all the yellow pieces face in the same direction.
+						It may look like you are breaking all that you just did, but do not worry, if you do &lsqb;R U R′ U′&rsqb; six times, the cube returns to its original position.
+						<br><br>
+						Now the yellow face is done. 
+						The sides will not be complete, but that is because we need to...
+					</p>
+					<figure class="figimages">
+						<img src="images/oll.svg" class="figimages" alt="A Rubik's Cube with a misoriented yellow side.">
+						<figcaption>Flip it over!</figcaption>
+					</figure>
+				</div>
+				<h2 id="permutecorners">Permute Last Corners</h2>
+				<div class="content contentwimg">
+					<figure class="figimages">
+						<img src="images/tperm.svg" class="figimages" alt="A T permutation on a Rubik's Cube.">
+						<figcaption>T permutation</figcaption>
+					</figure>
+					<p>
+						Permute the last corners!
+						Flip the cube back over so the yellow side is on top.
+						<br><br>
+						As one of the last steps, we will learn an algorithm that permutes two corners and two edges.
+						The algorithm <span class="bold">&lsqb;R U R′ U′ R′ F R2 U′ R′ U′ R U R′ F′&rsqb;</span> is called a T permutation.
+						It may be a bit daunting at first, but it uses the same ideas as &lsqb;R U R′ U′&rsqb;.
+						Just take it slow, you remember it in no time.
+						<br><br>
+						Note: If you need to swap two diagonal corners, use a T permutation to swap two corners, then do a y2 move and do another T permutation.
+					</p>
+				</div>
+				<h2 id="permuteedges">Permute Last Edges</h2>
+				<div class="content contentwimg">
+					<p>
+						You&apos;re in the home stretch! 
+						<br><br>
+						We will learn one final algorithm to align the final edges. 
+						This algorithm uses M moves, but it is not as hard as you may think.
+						M moves can be executed by holding the left and right faces of the cube and using your middle or ring finger to move the middle column.
+						M moves turn in the same direction as L moves&mdash;towards yourself&mdash;while M′ moves turn like R moves&mdash;away from yourself.
+						<br><br>
+						<span class="bold">&lsqb;M2 U′ M U2 M′ U′ M2&rsqb;</span> moves the left, front, and right edges in a clockwise direction.
+						This is called a U permutation.
+						<br><br>
+						Note: If all four edges are misaligned, you will have to do this algorithm at least twice.
+					</p>
+					<figure class="figimages">
+						<img src="images/uperm.svg" class="figimages" alt="A U permutation on a Rubik's Cube.">
+						<figcaption>U permutation</figcaption>
+					</figure>
+				</div>
+				<h2 id="done">You&apos;re Done!</h2>
+				<div class="content contentwimg">
+					<figure class="figimages">
+						<img src="images/3x3solved.svg" class="figimages" alt="A solved Rubik's Cube.">
+						<figcaption>Complete!</figcaption>
+					</figure>
+					<p>
+						Congratulations!
+						If everything went right, you solved a Rubik&apos;s Cube!
+						You have bested all 43 quintillion different cases of a Rubik&apos;s Cube.
+						Look at you go, galaxy brain!
+						If you are especially proud of your time, why not <a href="final3.html">submit your time</a>?
+					</p>
+				</div>
+				<h2 id="movingon">Moving On</h2>
+				<p class="content">
+					If you would like to get faster at solving a 3x3, I recommend learning either the 
+					<a href="https://jperm.net/3x3/cfop" target="_blank">CFOP Method</a> 
+					or the <a href="https://ruwix.com/the-rubiks-cube/different-rubiks-cube-solving-methods/roux-method/" target="_blank">Roux Method</a>.
+					If you want a different kind of challenge, I would recommend looking into 
+					<a href="https://jperm.net/4x4" target="_blank">4x4</a>, 
+					<a href="https://ruwix.com/twisty-puzzles/megaminx-gigaminx-teraminx-petaminx/" target="_blank">Megaminx</a>, 
+					or even a <a href="https://ruwix.com/twisty-puzzles/square-1-back-to-square-one/" target="_blank">Square-1</a>.
+					Visit the <a href="final4.html">credits page</a> for these tutorials and more other cool people/pages!
+				</p>
+				<div class="center">
+					<a href="#top" class="backtotop">Back to top</a>
+				</div>
+            </main>
+			<nav>
+                <ul>
+                    <li><a href="final1.html">Home</a></li>
+                    <li><a href="final2.html">Beginner&apos;s Method</a></li>
+                    <li><a href="final3.html">Contact</a></li>
+					<li><a href="final4.html">Credits</a></li>
+                </ul>
+            </nav>
+			<br>
+            <footer>
+				<a href="mailto:jmeyer98@stumail.jccc.edu">jmeyer98@stumail.jccc.edu</a>
+            </footer>
+        </div>
+    </body>
+</html>
