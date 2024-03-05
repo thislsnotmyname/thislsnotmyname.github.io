@@ -1,0 +1,95 @@
+<!DOCTYPE HTML> 
+<!-- Jeremy Meyers 03/05/24 --> 
+<html lang="en"> 
+    <head> 
+        <title>JavaScript Fundamentals - Week 2</title>
+        <meta charset= "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <h3>What is the purpose of JavaScript?</h3>
+        <p>The purpose of JavaScript is to add functionality to web pages. Three common uses are</p>
+            <ol>
+                <li>reacting to mouse input such as movement and clicks.</li>
+                <li>outputting data to the user and receiving input.</li>
+                <li>modifying the HTML and CSS on a web page, typically in response to user input.</li>
+            </ol>
+    
+        <h3>What software program will you be using to write JavaScript?</h3>
+        <p>Visual Studio Code.</p>
+    
+        <h3>Why are external scripts preferable to scripts added directly within an HTML file?</h3>
+        <p>
+            External scripts are preferable because you can utilize the same script across multiple pages 
+            without having to copy and paste it over and over.
+        </p>
+    
+        <h3>Alert, confirm, and prompt are methods of which object?</h3>
+        <p>The window object.</p>
+
+        <script>
+            "use strict"; // Step 3
+            alert("Hi, Jeremy!"); // Step 1
+            console.log("Hooray, Jeremy! You did it!"); // Step 3
+        </script>
+        <script>
+            // Step 4
+            const myName = "Jeremy";
+            let mySalary = 150000;
+            console.log('My name is ' + myName + ' and my salary is ' + mySalary + '.');
+
+            // Step 5
+            mySalary = 180000;
+            console.log('My name is ' + myName + ' and my new salary is ' + mySalary + '.');
+
+            let morningPerson = false; // Step 6
+
+            // Step 7
+            console.log(typeof myName);
+            console.log(typeof mySalary);
+            console.log(typeof morningPerson);
+
+            // Step 8
+            console.log(' ' + 1 + 0); // This returns a string because it is concatenating
+            console.log(' ' - 1 + 0); // This does not because it minuses 1 from ' ' then adds 0
+            console.log(true + false); // 1 + 0 = 1
+            
+            console.log('This statement did math since a number is first: ' + 6 / "3"); 
+            console.log('This statement did not do math since a string is first: ' + "2" * "3"); 
+            console.log('This statement did not do math since a string is first: ' + 4 + 5 + "px"); 
+            console.log('This concatenates the dollar sign to the numbers ' + '$' + 4 + 5); 
+            
+            console.log('4' - 2); // Implicitly converts the string to a number because of the subtraction
+            console.log('This gives an NaN since there is text with the minus sign ' + '4px' - 2); 
+            console.log(7 / 0); // Anything / 0 = Infinity
+            console.log('This does not do math since the 9 is text. ' + '  -9 '  + 5); 
+            
+            console.log("  -9  " - 5); // Similar to the above line
+            console.log(null + 1); // null is nothing, so nothing + 1 = 1
+            console.log(undefined + 1); // undefined is NaN so NaN + 1 = NaN
+
+            // Step 9
+            let a = 5, b = 5; 
+            let c = ++a;   
+            let d = b++; 
+            console.log(c); // Returns 6 because the prefix returns the incremented value
+            console.log(d); // Returns 5 because the postfix returns the original value, then increments
+
+            // Step 10
+            let x = 5; 
+            let y = 1 + (x *= 2); 
+            console.log(x);
+            console.log(y);
+
+            /* 
+            Let's break down the expression let y = 1 + (x *= 2); step by step:
+            x is initially 5.
+            x *= 2 is equivalent to x = x * 2, so x is multiplied by 2, making x equal to 10.
+            1 + (x *= 2) is 1 + 10, which equals 11.
+            The value 11 is assigned to the variable y.
+            After this code executes, x will be 10 and y will be 11.
+            */
+        </script>
+    </body>
+</html>
