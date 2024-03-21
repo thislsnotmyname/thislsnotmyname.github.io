@@ -1,1 +1,37 @@
+<!DOCTYPE HTML> 
+<!-- Jeremy Meyers, 03/20/2024 --> 
+<html lang="en"> 
+    <head> 
+        <title>Project 2 - Conditionals</title>
+        <meta charset= "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
 
+        <h3>Name a situation where you would need to create an "if" statement.</h3>
+        <p>
+            You might use an if statement for age checking on a website. 
+            For example, you give the user a way to input a date 
+            and then use an if statement to determine if the inputted age is greater than or equal to eighteen.
+        </p>
+
+        <h3>When comparing values, in what data type is the result stored?</h3>
+        <p>
+            A comparison will return a value of either true or false: a boolean.
+        </p>
+
+        <script>
+            "use strict";
+            let username = prompt("What is your name?", "Bart Simpson"); // Step 1
+            let proceed = confirm("Do you give permission to this website to use your name?"); // Step 2
+            if (proceed == true) { 
+                console.log("Yes, I can use your name on this page: " + username + "."); // Step 3
+            } else {
+                console.log("No, you can not use my name on this web page. Privacy Please!"); // Step 3
+            }
+            console.log(proceed == true ? "Yes, I can use your name on this page: " + username + "." : "No, you can not use my name on this web page. Privacy Please!"); // Step 4
+            let age = prompt("What is your age?", 18); // Step 5
+            alert("Hi " + username + "! You are " + age + " years old."); // Step 6
+        </script>
+    </body>
+</html>
