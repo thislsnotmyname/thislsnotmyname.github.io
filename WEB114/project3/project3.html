@@ -1,1 +1,49 @@
+<!DOCTYPE HTML> 
+<!-- Jeremy Meyers, 03/21/2024 --> 
+<html lang="en"> 
+    <head> 
+        <title>Project 3 - Loops and Switch</title>
+        <meta charset= "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
 
+        <h3>When would you use a do while or switch statement in your projects?</h3>
+        <p>
+            You would use a do while loop to execute a batch of code at least once, then carry on if the condition is truthy. 
+            You would use a switch statement to test a bunch of different cases on one thing, whether it be a comparison like (x > 0) or just the value of x.
+            The benefit of using a switch is readability; it is a little easier to read a switch statement than a bunch of if else statements.
+        </p>
+
+        <script>
+            "use strict";
+            const favDay = prompt("What is your favorite day of the week?", "Friday"); // Step 1
+            switch (favDay.toLowerCase()) { // Step 2
+                case "sunday": // Step 3
+                    console.log("Sunday is a great day of the week!"); // Step 4
+                    break; // Step 5
+                case "monday":
+                    console.log("Monday is a great day of the week!");
+                    break;
+                case "tuesday":
+                    console.log("Tuesday is a great day of the week!");
+                    break;
+                case "wednesday":
+                    console.log("Wednesday is a great day of the week!");
+                    break;
+                case "thursday":
+                    console.log("Thursday is a great day of the week!");
+                    break;
+                case "friday":
+                    console.log("Friday is a great day of the week! It's my favorite too!");
+                    break;
+                case "saturday":
+                    console.log("Saturday is a great day of the week!");
+                    break;
+                default: // Step 6
+                    console.log("That isn't a day of the week!");
+                    break;
+            }
+        </script>
+    </body>
+</html>
