@@ -1,1 +1,155 @@
+<!DOCTYPE HTML> 
+<!-- Jeremy Meyers, 04/05/2024 --> 
+<html lang="en"> 
+    <head> 
+        <title>Project 4 - DOM</title>
+        <meta charset= "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="questions">
+            
+            <h3>Why is the JavaScript textContent property safer than innerHTML?</h3>
+            <p>
+                textContent changes the text of the target, while innerHTML can include HTML tags.
+                This makes it easier for someone to pass malicious code into your project through an unsanitized input box.
+            </p>
+            
+            <h3>
+                Explain the relationship between an HTML attribute and a corresponding DOM property 
+                (explain the connection to JavaScript). 
+                Use a specific example in your answer.
+            </h3>
+            <p>
+                Each HTML attribute has a corresponding DOM property that can be manipulated with JavaScript.
+                If one is changed, usually the other gets changed as well.
+                HTML attributes are not the only things that are properties, however.
+                innerHTML is a DOM property that changes the HTML inside the element it is called on.
+                Many of their names are one to one: style in HTML is style in DOM, href is href, etc.
+                Some, however, are not one to one, like class.
+                Class in HTML becomes className in JavaScript for historical reasons.
+            </p>
+            
+            <h3>What is a JavaScript method?  Define and provide two examples.</h3>
+            <p>
+                Methods--also called functions--are essentially a shorthand for a list of code to be executed.
+                That way, you do not have write that list a bunch of times.
+                Just write it once and call back to it whenever you need it.
+                Some examples are console.log() and Number().
+            </p>
+            
+            <h3>What is a JavaScript property? Define and provide two examples.</h3>
+            <p>
+                A JavaScript property is a way to change an HTML attribute.
+                For example, you could use the property "href" to change the corresponding HTML attribute.
+                In the same vein, you could use innerHTML with JavaScript to change the HTML inside the node you are working with.
+            </p>
+            
+            <h3>What is a JavaScript object?  Define and provide two examples.</h3>
+            <p>
+                An object is a data type that can contain all sorts of things: methods, variables, even other objects.
+                One example would be the document object that contains all things relating to the document like HTML tags and their objects.
+                Another example would be style which is an object that can be used with anything that can be styled.
+            </p>
+            
+            <h3>What is a CSS selector? Define and provide two examples.</h3>
+            <p>
+                A CSS selector is what goes before the curly braces in CSS.
+                A few examples are a:hover (a pseudo-class), #wrapper (an id), or .heading (a class).
+            </p>
+            
+            <h3>What is a CSS property? Define and provide two examples.</h3>
+            <p>
+                A CSS property is what you want to style.
+                Some examples are z-index, color, and font-family.
+            </p>
 
+            <h3>What is a CSS declaration? Define and provide two examples.</h3>
+            <p>
+                A CSS declaration is a combo of a CSS property and a value.
+                It looks like "property: value;".
+                A few examples are "color: red;", "font-family: Garamond;", and "padding: 10px;".
+            </p>
+
+        </div>
+        
+        <div id="DOMManip">
+            <h1 id="heading1">Placeholder</h1> <!-- Step 1 -->
+
+            <!-- Step 3 -->
+            <h2 id="heading2">Major</h2>
+            <h2 id="heading3">Major</h2>
+            <h2 id="heading4">Major</h2>
+        </div>
+
+        <script>
+            "use strict";
+            let jccc = document.getElementById("heading1");
+            jccc.textContent = "Johnson County Community College"; // Step 2
+           
+            // Step 4
+            let head2 = document.getElementById("heading2");
+            head2.textContent = "Web Development and Digital Media";
+           
+            let head3 = document.getElementById("heading3");
+            head3.textContent = "Game Development";
+           
+            let head4 = document.getElementById("heading4");
+            head4.textContent = "Cybersecurity";
+            
+            // Step 5
+            let head5 = document.createElement('h2');
+            head5.textContent = "Animation";
+            head4.after(head5);
+            
+            let head6 = document.createElement('h2');
+            head6.textContent = "Photography";
+            head5.after(head6);
+            
+            let head7 = document.createElement('h2');
+            head7.textContent = "Painting";
+            head6.after(head7);
+
+            // Step 6
+            let ul = document.createElement('ul'); // Creates node for an unordered list.
+            document.body.append(ul); // Inserts the node at the end of the body tag.
+            while (true) { // An infinite loop. Who will save us?!
+                
+                let data = prompt("Enter the text for the list item", ""); // Prompts the user for input.
+                
+                if (!data) { // If there is no input then...
+                    break; // "I will save you!" says the heroic break statement.
+                }
+
+                let li = document.createElement('li'); // Create a node for a list item.
+                li.textContent = data; // Take the user input and put it in the li.
+                ul.append(li); // Put the li at the end of the ul.
+
+            }
+            
+            // Step 7
+            jccc.className = "jccc";
+
+            for (let headings of document.body.querySelectorAll("h2")) { // Assign all h2s the class "major"
+                headings.className = "major";
+            }
+
+            let i = 0;
+            for (let headalt of document.body.querySelectorAll("h2")) { // Give every other h2 the class "alt"
+                if (i % 2 !== 0) {
+                    headalt.classList.add("alt");
+                }
+                i++;
+            }
+
+            for (let major of document.body.querySelectorAll(".major")) { // Iterates to give all of class "major" the text color blue
+                major.style.color = "blue";
+            }
+
+            for (let alternate of document.body.querySelectorAll(".alt")) { // Iterates to give all of class "alt" the text color red
+                alternate.style.color = "red";
+            }
+
+        </script>
+    </body>
+</html>
