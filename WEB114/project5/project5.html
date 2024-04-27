@@ -1,1 +1,54 @@
+<!DOCTYPE HTML> 
+<!-- Jeremy Meyers, 04/27/2024 --> 
+<html lang="en"> 
+    <head> 
+        <title>Project 5 - Functions</title>
+        <meta charset= "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="questions">
+            
+            <h3>What is the purpose of a function?</h3>
+            <p>
+                The purpose of a function is to have a reference to a specific block of code. 
+                That way you can run a long chunk of code by referring back to it without having to copy and paste it again and again.
+                It also enhances readability by laying out specific sections for specific tasks that must be performed many times or even just once.
+            </p>
 
+        </div>
+        <script>
+            "use strict";
+            let username = prompt("What is your name?", "Elvis Presley"); // Step 1
+            
+            function getWeeklyGas() { // Step 2
+                let weeklyGas = 0;
+
+                weeklyGas = prompt("What is your weekly gas total? Enter -1 to finish.");
+                weeklyGas = parseFloat(weeklyGas);
+
+                return weeklyGas;
+            }
+
+            function calcGasAvg() { // Step 3
+                let weeks = 0; // Step 3a
+                let total = 0;
+                let weeklyGas = 0;
+
+                weeklyGas = getWeeklyGas(); // Step 2
+
+                while (weeklyGas !== -1) { // Step 3b
+                    total += weeklyGas;
+
+                    weeklyGas = getWeeklyGas();
+                    weeks++; // Step 3c
+                }
+
+                return (total / weeks); // Step 3d
+            }
+
+            let gas = calcGasAvg(); // Step 4
+            confirm(username + "'s average weekly gas bill is " + gas.toFixed(2)); // Step 5
+        </script>
+    </body>
+</html>
