@@ -1,4 +1,4 @@
-/* Jeremy Meyers, 05/07/2024 */
+/* Jeremy Meyers, 05/08/2024 */
 @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
 .poetsen-one-regular {
     font-family: "Poetsen One", sans-serif;
@@ -15,7 +15,7 @@ body {
 }
 #wrapper {
     position: relative;
-    width: 90%;
+    width: 98%;
     margin-left: auto;
     margin-right: auto;
     background-color: #EFEFEF;
@@ -109,7 +109,7 @@ p.results {
 }
 .rules {
     background-color: #F3EFEE;
-    max-width: 450px;
+    max-width: 400px;
     padding: 0 10px 10px;
     width: 100%;
     margin: 0 auto 10px;
@@ -128,6 +128,7 @@ p.rules {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 .center {
     display: flex;
@@ -227,7 +228,7 @@ a {
 }
 @media (min-width: 1150px) {
     #wrapper {
-        width: 55%;
+        width: 50%;
     }
     h1 {
         font-size: 1.75em;
