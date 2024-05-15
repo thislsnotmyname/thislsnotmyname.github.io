@@ -1,4 +1,4 @@
-/* Jeremy Meyers, last updated 11/06/2023 */
+/* Jeremy Meyers, last updated 05/15/2024 */
 * {
 	box-sizing: border-box;
 }
@@ -42,10 +42,38 @@ section {
 	margin: 10px;
 	box-shadow: 2px 2px 20px gray;
 }
+#featured {
+	padding: 0 10px 10px;
+	margin: 10px;
+	box-shadow: 2px 2px 20px gray;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	font-size: 0.9em;
+}
+#featured a {
+	width: 33%;
+}
+#featured figure {
+	margin: 10px auto 0 auto;
+	padding: 0 10px 10px;
+	width: 100%;
+	line-height: 1.3em;
+}
+#featured img {
+	max-height: 75%;
+	width: 100%;
+}
+figcaption {
+	text-align: center;
+}
 #assignments {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: flex-start;
+}
+.featured-list {
+	list-style-type: "✨";
 }
 footer {
 	font-size: 75%;
