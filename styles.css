@@ -1,11 +1,18 @@
-/* Jeremy Meyers, last updated 05/15/2024 */
+/* Jeremy Meyers, last updated 05/17/2024 */
+.graduate-regular {
+	font-family: "Graduate", serif;
+	font-weight: 400;
+	font-style: normal;
+}  
 * {
 	box-sizing: border-box;
 }
 body {
-	background-color: #FFF8DC;
+	background-color: #131552;
+	background-color: #092557;
 	font-family: 'Courier New', monospace;
-	color: #000000;
+	color: #e3e6ed;
+	text-shadow: 2px 2px 5px #092557;
 }
 #wrapper {
 	width: 75%;
@@ -14,38 +21,71 @@ body {
 	min-width: 600px;
 	max-width: 1750px;
 	background-color: inherit;
-	box-shadow: 5px 5px 20px gray;
-	border: 3px dashed #000;
+	box-shadow: 5px 5px 20px #627497;
+	border: 1px solid #627497;
 	padding: 1px 25px 20px 25px;
 }
+h1, h2, h3, h4, p, span, a {
+	opacity: 0.99;
+}
 h1 {
-	margin-top: 0;
+	margin-top: 2px;
+}
+h3 {
+	margin-bottom: 0;
 }
 h4 {
 	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 0 0 5px;
 }
 /*nav {}*/
 header {
 	text-align: center;
 }
-main ul a {
+main ul {
+	border-top: 1px solid #627497;
+	border-bottom: 1px solid #627497;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+main a {
 	font-weight: bold;
 	color: #29ABDF;
 }
-main ul a:hover {
+main a:hover {
 	color: #DF29AB;
 	text-transform: uppercase;
 }
+/* @keyframes hover {
+	from {color: #DF29AB;
+		font-size: 1em;}
+	to {color: rgb(0, 230, 0);
+		font-size: 1.2em;}
+} */
+/* .hover {
+	color: rgb(0, 230, 0);
+	font-size: 1.2em;
+	animation-name: hover;
+	animation-duration: 38ms;
+} */
 /*main ul a:visited {}*/
 section {
+	background-color: #092557;
+	background-color: #1a376e;
 	padding: 0 10px 10px;
 	margin: 10px;
-	box-shadow: 2px 2px 20px gray;
+	box-shadow: 5px 5px 20px #627497;
+	border: 1px solid #627497;
 }
 #featured {
+	background-color: #092557;
+	background-color: #1a376e;
 	padding: 0 10px 10px;
 	margin: 10px;
-	box-shadow: 2px 2px 20px gray;
+	box-shadow: 5px 5px 20px #627497;
+	border: 1px solid #627497;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: flex-start;
@@ -68,16 +108,69 @@ figcaption {
 	text-align: center;
 }
 #assignments {
+	display: grid;
+	grid-template-columns: 1fr 12.5% 1fr;
+	gap: 10px 0;
+	width: 85%;
+	margin: 0 auto;
+}
+#countdown {
+	font-family: "Graduate", "Courier New", serif;
+	font-weight: 700;
+	font-size: 1.1em;
+}
+.academic-year {
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: flex-start;
+	justify-content: center;
+	align-items: center;
+}
+.academic-year p {
+	writing-mode: vertical-lr;
+	text-orientation: upright;
+	font-size: 3em;
+	letter-spacing: 0.15em;
+	font-weight: 700;
+	font-family: "Graduate", "Courier New", serif;
 }
 .featured-list {
 	list-style-type: "✨";
+}
+.legend {
+	margin-top: 0;
+	font-size: 0.85em;
+}
+.backToHome {
+	font-family:'Courier New', Courier, monospace;
+	font-size: 1.25em;
+	font-weight: 700;
+	text-decoration: none;
+	position: absolute;
+	top: 0.5%;
+	transform: translate(-12.5%, 50%);
+}
+.backToHome:hover {
+	text-decoration: underline;
+}
+.video {
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+}
+.pdf {
+	display: block;
+	width: 80%;
+	height: 700px;
+	margin: 0 auto;
 }
 footer {
 	font-size: 75%;
 	font-style: italic;
 	text-align: center;
 	clear: both;
+}
+footer a {
+	color: #29ABDF;
+}
+footer a:hover {
+	color: #DF29AB;
 }
