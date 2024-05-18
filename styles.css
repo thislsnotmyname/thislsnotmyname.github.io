@@ -8,11 +8,10 @@
 	box-sizing: border-box;
 }
 body {
-	background-color: #131552;
 	background-color: #092557;
 	font-family: 'Courier New', monospace;
 	color: #e3e6ed;
-	text-shadow: 2px 2px 5px #092557;
+	text-shadow: 2px 2px 5px #051e4a;
 }
 #wrapper {
 	width: 75%;
@@ -72,7 +71,6 @@ main a:hover {
 } */
 /*main ul a:visited {}*/
 section {
-	background-color: #092557;
 	background-color: #1a376e;
 	padding: 0 10px 10px;
 	margin: 10px;
@@ -80,7 +78,6 @@ section {
 	border: 1px solid #627497;
 }
 #featured {
-	background-color: #092557;
 	background-color: #1a376e;
 	padding: 0 10px 10px;
 	margin: 10px;
