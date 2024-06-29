@@ -20,7 +20,7 @@ body {
 	min-width: 600px;
 	max-width: 1750px;
 	background-color: inherit;
-	box-shadow: 5px 5px 20px #627497;
+	box-shadow: 2px 2px 20px #627497;
 	border: 1px solid #627497;
 	padding: 1px 25px 20px 25px;
 }
@@ -46,8 +46,11 @@ header {
 main ul {
 	border-top: 1px solid #627497;
 	border-bottom: 1px solid #627497;
-	padding-top: 7px;
-	padding-bottom: 7px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+main li {
+	margin: 1px;
 }
 main a {
 	font-weight: bold;
@@ -56,6 +59,7 @@ main a {
 main a:hover {
 	color: #DF29AB;
 	text-transform: uppercase;
+	font-style: normal;
 }
 /* @keyframes hover {
 	from {color: #DF29AB;
@@ -72,29 +76,24 @@ main a:hover {
 /*main ul a:visited {}*/
 section {
 	background-color: #1a376e;
-	padding: 0 10px 10px;
+	padding: 0 10px 5px;
 	margin: 10px;
 	box-shadow: 5px 5px 20px #627497;
 	border: 1px solid #627497;
 }
 #featured {
 	background-color: #1a376e;
-	padding: 0 10px 10px;
+	padding: 10px 10px 0;
 	margin: 10px;
 	box-shadow: 5px 5px 20px #627497;
 	border: 1px solid #627497;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: flex-start;
+	display: grid;
+	grid-template-columns: 1fr 1.1fr 1fr;
 	font-size: 0.9em;
-}
-#featured a {
-	width: 33%;
 }
 #featured figure {
 	margin: 10px auto 0 auto;
-	padding: 0 10px 10px;
-	width: 100%;
+	padding: 0 10px;
 	line-height: 1.3em;
 }
 #featured img {
@@ -104,11 +103,14 @@ section {
 figcaption {
 	text-align: center;
 }
+figcaption a {
+	font-family: 'Graduate', 'Courier New', monospace;
+}
 #assignments {
 	display: grid;
 	grid-template-columns: 1fr 12.5% 1fr;
 	gap: 10px 0;
-	width: 85%;
+	width: 87.5%;
 	margin: 0 auto;
 }
 #countdown {
@@ -130,7 +132,7 @@ figcaption {
 	font-family: "Graduate", "Courier New", serif;
 }
 .featured-list {
-	list-style-type: "✨";
+	list-style-type: "⭐";
 }
 .legend {
 	margin-top: 0;
