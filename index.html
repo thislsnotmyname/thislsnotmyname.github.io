@@ -15,9 +15,13 @@ Last update: 08/22/2024
 		<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 		<link rel="manifest" href="icons/site.webmanifest">
 		<link rel="stylesheet" href="styles.css" type="text/css">
-		<link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Graduate&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
 		<script src="countdown.js" defer></script>
+		<script src="https://kit.fontawesome.com/f254ef688e.js" crossorigin="anonymous"></script>
     </head>
     <body>
 		<div id="wrapper">
@@ -133,11 +137,94 @@ Last update: 08/22/2024
 						<p id="message"><noscript>If you can read this, you're too early.</noscript></p>
 					</section>
 				</div>
+				<h2>Personal Projects</h2>
+				<div id="personal">
+					<section id="foundations" class="odin-project">
+						<h3>Foundations</h3>
+						<h4>HTML/CSS</h4>
+						<ul>
+							<li>
+								<span class="project-name" title="Basic HTML/CSS">Recipes</span>
+								<a href="./odin-recipes" class="live-examples">Preview</a>
+								<a href="https://github.com/thislsnotmyname/odin-recipes" class="live-examples"><i class="fa-brands fa-github github" alt="GitHub logo"></i>Code</a>
+							</li>
+							<li>
+								<span class="project-name" title="Fun With Flexbox">Landing Page</span>
+								<a href="./landing-page" class="live-examples">Preview</a>
+								<a href="https://github.com/thislsnotmyname/landing-page" class="live-examples"><i class="fa-brands fa-github github" alt="GitHub logo"></i>Code</a>
+							</li>
+						</ul>
+						<h4>JavaScript</h4>
+						<ul>
+							<li>
+								<span class="project-name" title="Basic JavaScript/DOM">Rock, Paper, Scissors</span>
+								<a href="./rock-paper-scissors" class="live-examples">Preview</a>
+								<a href="https://github.com/thislsnotmyname/rock-paper-scissors" class="live-examples"><i class="fa-brands fa-github github" alt="GitHub logo"></i>Code</a>
+							</li>
+							<li>
+								<span class="project-name" title="Fun With DOM">Etch-a-Sketch</span>
+								<a href="./etch-a-sketch" class="live-examples">Preview</a>
+								<a href="https://github.com/thislsnotmyname/etch-a-sketch" class="live-examples"><i class="fa-brands fa-github github" alt="GitHub logo"></i>Code</a>
+							</li>
+							<li>
+								<span class="project-name" title="Put It All Together">Calculator</span>
+								<a href="./calculator" class="live-examples">Preview</a>
+								<a href="https://github.com/thislsnotmyname/calculator" class="live-examples"><i class="fa-brands fa-github github" alt="GitHub logo"></i>Code</a>
+							</li>
+						</ul>
+					</section>
+					<section id="ruby" class="odin-project">
+						<h3>Ruby</h3>
+						<h4>Basic Ruby</h4>
+						<ul>
+							<li>
+								<span class="project-name" title="Basic Ruby: Computer Science Problems">Caesar Cipher</span>
+								<a href="https://github.com/thislsnotmyname/caesar_cipher" class="live-examples"><i class="fa-brands fa-github github" alt="GitHub logo"></i>Code</a>
+							</li>
+							<li>
+								<span class="project-name" title="Basic Ruby: Computer Science Problems">Sub Strings</span>
+								<a href="https://github.com/thislsnotmyname/sub_strings" class="live-examples"><i class="fa-brands fa-github github" alt="GitHub logo"></i>Code</a>
+							</li>
+							<li>
+								<span class="project-name" title="Basic Ruby: Computer Science Problems">Stock Picker</span>
+								<a href="https://github.com/thislsnotmyname/stock_picker" class="live-examples"><i class="fa-brands fa-github github" alt="GitHub logo"></i>Code</a>
+							</li>
+							<li>
+								<span class="project-name" title="Basic Ruby: Computer Science Problems">Bubble Sort</span>
+								<a href="https://github.com/thislsnotmyname/bubble_sort" class="live-examples"><i class="fa-brands fa-github github" alt="GitHub logo"></i>Code</a>
+							</li>
+						</ul>
+						<h4>Object-Oriented Programming</h4>
+						<ul>
+							<li>
+								<span class="project-name" title="Game-Making With Objects">Tic-Tac-Toe</span>
+								<a href="https://github.com/thislsnotmyname/tic_tac_toe" class="live-examples"><i class="fa-brands fa-github github" alt="GitHub logo"></i>Code</a>
+							</li>
+							<li>
+								<span class="project-name" title="Game-Making With Objects: Nightmare Mode">Mastermind</span>
+								<a href="https://github.com/thislsnotmyname/mastermind" class="live-examples"><i class="fa-brands fa-github github" alt="GitHub logo"></i>Code</a>
+							</li>
+						</ul>
+						<h4>Files and Serialization</h4>
+						<ul>
+							<li>
+								<span class="project-name" title="Working With CSV/Basic APIs">Event Manager</span>
+								<a href="https://github.com/thislsnotmyname/event_manager" class="live-examples"><i class="fa-brands fa-github github" alt="GitHub logo"></i>Code</a>
+							</li>
+							<li>
+								<span class="project-name" title="Serialization: Game Saving and Loading">Hangman</span>
+								<a href="https://github.com/thislsnotmyname/hangman" class="live-examples"><i class="fa-brands fa-github github" alt="GitHub logo"></i>Code</a>
+							</li>
+						</ul>
+					</section>
+				</div>
 			</main>
 			<br>
 			<footer>
 				<a href="sitemap.html">Sitemap</a><br>
-				<a href="https://fonts.google.com/specimen/Graduate">Graduate font created by Eduardo Tunni, sourced from Google Fonts</a><br>
+				<span class="graduate">Graduate</span> font created by <a href="https://fonts.google.com/specimen/Graduate">Eduardo Tunni</a><br>
+				<span class="roboto-mono">Roboto Mono</span> font created by <a href="https://fonts.google.com/specimen/Roboto+Mono">Christian Robertson</a><br>
+				<span class="comfortaa">Comfortaa</span> font created by <a href="https://fonts.google.com/specimen/Comfortaa">Johan Aakerlund</a><br>
 				<a href="mailto:jeremy@jeremymeyers.dev">jeremy@jeremymeyers.dev</a>
 			</footer>
 		</div>
