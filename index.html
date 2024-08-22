@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <!-- 
 Jeremy Meyers's website, a dumping ground for projects, currently mostly school projects.
-Last update: 05/17/2024
+Last update: 08/22/2024
 -->
 <html lang="en">
     <head>
       	<title>Jeremy Meyers - Home</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 		<link rel="icon" type="image/png" href="icons/favicon-32x32.png" sizes="32x32">
 		<link rel="icon" type="image/png" href="icons/favicon-16x16.png" sizes="16x16">
 		<link rel="icon" type="image/x-icon" href="icons/favicon.ico">
@@ -15,6 +16,8 @@ Last update: 05/17/2024
 		<link rel="manifest" href="icons/site.webmanifest">
 		<link rel="stylesheet" href="styles.css" type="text/css">
 		<link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+
+		<script src="countdown.js" defer></script>
     </head>
     <body>
 		<div id="wrapper">
@@ -138,42 +141,5 @@ Last update: 05/17/2024
 				<a href="mailto:jeremy@jeremymeyers.dev">jeremy@jeremymeyers.dev</a>
 			</footer>
 		</div>
-		<script>
-			"use strict";
-			
-			let currentDate = new Date(); // Countdown to new semester
-			let nextSemester = new Date("August 26, 2024");
-			let season = (nextSemester.getMonth() === 7) ? "summer" : "winter";
-			let daysTill = Math.round((nextSemester - currentDate) / 86400000);
-
-			let messages = [
-				"If you can read this, you're about <span id='countdown'>this many</span> days too early.", 
-				"There won't be anything here for another <span id='countdown'>x amount of</span> days!", 
-				"Holy time shenanigans! You'll have to wait another <span id='countdown'>x amount of</span> days to see anything here.", 
-				`setTimeout(() => {<br>
-					postNewContent();<br>
-				}, <span id='countdown'>delay</span> days;`,
-				"I'm sleeping, come back in <span id='countdown'>this many</span> days.",
-				"♫ Wake me up in <span id='countdown'>this many</span> days ♫",
-				`♫ There's <span id='countdown'>this many</span> more days of ${season} vacation, and school comes along just to end it ♫`,
-				"[More content] comes to those who [wait <span id='countdown'>this many</span> more days] -Someone famous probably",
-				`<span 
-					id='countdown' 
-					style='
-						font-size: 5em; 
-						text-align: center !important; 
-						display: block; 
-						text-shadow: 2px 2px 50px #999, 2px 2px 20px #FFFF77;
-					'>
-					this many
-				</span>`
-			];
-
-			let message = messages[Math.floor(Math.random() * messages.length)];
-			let shownMessage = (daysTill === 1) ? message.replace("days", "day") : message;
-			document.getElementById("message").innerHTML = shownMessage;
-			document.getElementById("countdown").textContent = `${daysTill}`;
-		</script>
-		<!-- <script src="main.js"></script> -->
     </body>
 </html>    	
