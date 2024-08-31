@@ -107,6 +107,17 @@ summary:hover {
 details, details[open] {
 	align-self: stretch;
 }
+details > summary::marker {
+	text-shadow: 1px 1px 0px #01102a;
+}
+details > summary {
+	list-style-type: "⮞ ";
+	font-family: "Comfortaa";
+	text-shadow: 1px 1px 0px #01102a;
+}
+details[open] > summary {
+	list-style-type: "⮟ ";
+}
 /* Featured Projects */
 #featured {
 	background-color: #142c59;
