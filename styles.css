@@ -49,9 +49,9 @@ h3 {
 	margin-bottom: 0.75em;
 }
 summary + .legend {
-	margin-top: -0.75em;
+	margin-top: -1em;
 }
-h3, .legend {
+h2, h3, .legend {
 	margin-left: 5px;
 }
 h4 {
@@ -90,13 +90,13 @@ main a:hover {
 /* General sections */
 div > details {
 	background-color: #142c59;
-	padding: 0 10px 5px;
-	margin: 10px;
+	padding: 0 0.6em 0.25em;
+	margin: 0.6em;
 	box-shadow: 5px 5px 25px #6583c0;
 	border: 1px solid #6583c0;
 }
 summary {
-	margin: 1em 0.5em;
+	margin: 1.5em 0.5em 1em;
 }
 summary > * {
 	display: inline;
@@ -121,8 +121,8 @@ details[open] > summary {
 /* Featured Projects */
 #featured {
 	background-color: #142c59;
-	padding: 10px;
-	margin: 10px;
+	padding: 0.75em;
+	margin: 0.75em;
 	box-shadow: 5px 5px 25px #6583c0;
 	border: 1px solid #6583c0;
 	display: flex;
@@ -183,7 +183,10 @@ figcaption a {
 	font-family: "Graduate", "Courier New", serif;
 }
 .featured-list {
-	list-style-type: "⭐";
+	list-style-type: "⭐" !important;
+}
+details > summary.featured-list::before {
+	content: "\20\20";
 }
 span.featured-list::before {
 	content: "⭐";
