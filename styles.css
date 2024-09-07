@@ -48,7 +48,7 @@ h1 {
 h3 {
 	margin-bottom: 0.75em;
 }
-summary + .legend {
+summary + div > .legend {
 	margin-top: -1em;
 }
 h2, h3, .legend {
@@ -201,7 +201,7 @@ li.featured-list {
 	font-size: 0.85em;
 }
 /* Personal Projects - The Odin Project */
-#personal div {
+#personal > div {
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: center;
@@ -344,5 +344,10 @@ footer a:hover {
 	}
 	#personal div {
 		flex-flow: row wrap;
+	}
+}
+@media (min-width: 1800px) {
+	body {
+		font-size: 1.5em;
 	}
 }
