@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- 
 Jeremy Meyers's website, a dumping ground for projects, currently mostly school projects.
-Last update: 08/29/2024
+Last update: 09/06/2024
 -->
 <html lang="en">
     <head>
@@ -40,7 +40,8 @@ Last update: 08/29/2024
 					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</p>
-				<h2>⭐ Featured Works</h2>
+				<details open>
+				<summary class="featured-list"><h2>Featured Works</h2></summary>
 				<div id="featured">
 					<figure>
 						<a href="./index.html">
@@ -84,176 +85,190 @@ Last update: 08/29/2024
 							<span class="updated-date">12/11/2023</span>
 						</figcaption>
 					</figure>
-					
 				</div>
-				<h2>School Assignments</h2>
+				</details>
+				<details open>
+				<summary><h2>School Assignments</h2></summary>
 				<div id="assignments">
-					<section id="fall23" class="fall">
-						<h3>Fall Semester 2023</h3>
-						<p class="legend">⭐ = featured</p>
-						<h4>WEB 110</h4>
-						<ul>
-							<li>09/25: <a href="WEB110/assignment04/index.html" target="_blank">Assign. #04 - Basics</a></li>
-							<li>10/02: <a href="WEB110/assignment05/index.html" target="_blank">Assign. #05 - Images</a></li>
-							<li>10/09: <a href="WEB110/assignment06/index.html" target="_blank">Assign. #06 - Centering</a></li>
-							<li>10/28: <a href="WEB110/midterm/index.html" target="_blank">Midterm Project - Portfolio</a></li>
-							<li>10/30: <a href="WEB110/assignment07/index.html" target="_blank">Assign. #07 - Sections</a></li>
-							<li>11/06: <a href="WEB110/assignment08/index.html" target="_blank">Assign. #08 - Media Queries</a></li>
-							<li>11/15: <a href="WEB110/assignment09/index.html" target="_blank">Assign. #09 - Forms</a></li>
-							<li class="featured-list">12/11: <a href="WEB110/final/final1.html" class="featured-list" target="_blank">Final Project - How To Rubik's Cube</a></li>
-						</ul>
-						<h4>CDTP 135</h4>
-						<ul>
-							<li>01/01/24: <a href="CDTP135/finalproject.jpg" target="_blank">Final Project - <i>Catwalk</i></a></li>
-						</ul>
-					</section>
+					<details open id="fall23" class="fall">
+						<summary><h3>Fall Semester 2023</h3></summary>
+						<div>
+							<p class="legend">⭐ = featured</p>
+							<h4>WEB 110</h4>
+							<ul>
+								<li>09/25: <a href="WEB110/assignment04/index.html" target="_blank">Assign. #04 - Basics</a></li>
+								<li>10/02: <a href="WEB110/assignment05/index.html" target="_blank">Assign. #05 - Images</a></li>
+								<li>10/09: <a href="WEB110/assignment06/index.html" target="_blank">Assign. #06 - Centering</a></li>
+								<li>10/28: <a href="WEB110/midterm/index.html" target="_blank">Midterm Project - Portfolio</a></li>
+								<li>10/30: <a href="WEB110/assignment07/index.html" target="_blank">Assign. #07 - Sections</a></li>
+								<li>11/06: <a href="WEB110/assignment08/index.html" target="_blank">Assign. #08 - Media Queries</a></li>
+								<li>11/15: <a href="WEB110/assignment09/index.html" target="_blank">Assign. #09 - Forms</a></li>
+								<li class="featured-list">12/11: <a href="WEB110/final/final1.html" class="featured-list" target="_blank">Final Project - How To Rubik's Cube</a></li>
+							</ul>
+							<h4>CDTP 135</h4>
+							<ul>
+								<li>01/01/24: <a href="CDTP135/finalproject.jpg" target="_blank">Final Project - <i>Catwalk</i></a></li>
+							</ul>
+						</div>
+					</details>
 					<div class="academic-year">
 						<p>2023-24</p>
 					</div>
-					<section id="spring24" class="spring">
-						<h3>Spring Semester 2024</h3>
-						<p class="legend">⭐ = featured</p>
-						<h4>WEB 114</h4>
-						<ul>
-							<li>03/05: <a href="WEB114/project1/project1.html" target="_blank">Project 1 - Fundamentals</a></li>
-							<li>03/20: <a href="WEB114/project2/project2.html" target="_blank">Project 2 - Conditionals</a></li>
-							<li>03/21: <a href="WEB114/project3/project3.html" target="_blank">Project 3 - Switches</a></li>
-							<li>04/05: <a href="WEB114/project4/project4.html" target="_blank">Project 4 - DOM</a></li>
-							<li>04/27: <a href="WEB114/project5/project5.html" target="_blank">Project 5 - Functions</a></li>
-							<li class="featured-list">05/07: <a href="WEB114/final/final.html" class="featured-list" target="_blank">Final Project - Rock, Paper, Scissors, Lizard, Spock</a></li>
-						</ul>
-						<h4>WEB 116</h4>
-						<ul>
-							<li>04/14: <a href="WEB116/finalpaper.html">Research Paper - Social Media Addiction: An Overview</a></li>
-							<li>04/21: <a href="WEB116/finalpresentation.html">Research Presentation</a></li>
-						</ul>
-						<h4>WEB 118</h4>
-						<ul>
-							<li>05/09: <a href="WEB118/finaldocument.html">Final Document - Summit Bible Quizzing: A Potential Redesign</a></li>
-							<li>05/09: <a href="WEB118/finalpresentation.html">Final Presentation</a></li>
-						</ul>
-					</section>
-					<section id="fall24" class="fall">
-						<h3>Fall Semester 2024</h3>
+					<details open id="spring24" class="spring">
+						<summary><h3>Spring Semester 2024</h3></summary>
+						<div>
+							<p class="legend">⭐ = featured</p>
+							<h4>WEB 114</h4>
+							<ul>
+								<li>03/05: <a href="WEB114/project1/project1.html" target="_blank">Project 1 - Fundamentals</a></li>
+								<li>03/20: <a href="WEB114/project2/project2.html" target="_blank">Project 2 - Conditionals</a></li>
+								<li>03/21: <a href="WEB114/project3/project3.html" target="_blank">Project 3 - Switches</a></li>
+								<li>04/05: <a href="WEB114/project4/project4.html" target="_blank">Project 4 - DOM</a></li>
+								<li>04/27: <a href="WEB114/project5/project5.html" target="_blank">Project 5 - Functions</a></li>
+								<li class="featured-list">05/07: <a href="WEB114/final/final.html" class="featured-list" target="_blank">Final Project - Rock, Paper, Scissors, Lizard, Spock</a></li>
+							</ul>
+							<h4>WEB 116</h4>
+							<ul>
+								<li>04/14: <a href="WEB116/finalpaper.html">Research Paper - Social Media Addiction: An Overview</a></li>
+								<li>04/21: <a href="WEB116/finalpresentation.html">Research Presentation</a></li>
+							</ul>
+							<h4>WEB 118</h4>
+							<ul>
+								<li>05/09: <a href="WEB118/finaldocument.html">Final Document - Summit Bible Quizzing: A Potential Redesign</a></li>
+								<li>05/09: <a href="WEB118/finalpresentation.html">Final Presentation</a></li>
+							</ul>
+						</div>
+					</details>
+					<details open id="fall24" class="fall">
+						<summary><h3>Fall Semester 2024</h3></summary>
 						<p id="message"><noscript>If you can read this, you're too early.</noscript></p>
-					</section>
+					</details>
 				</div>
-				<h2>Personal Projects</h2>
+				</details>
+				<details open>
+				<summary><h2>Personal Projects</h2></summary>
 				<div id="personal">
 					<h3>The Odin Project</h3>
 					<div class="odin-project">
-						<section id="foundations" class="odin-project">
-							<h3>Foundations</h3>
-							<h4>HTML/CSS</h4>
-							<ul>
-								<li>
-									<span class="project-name" title="Basic HTML/CSS">Recipes</span>
-									<a href="./odin-recipes" class="live-examples">Preview</a>
-									<a href="https://github.com/thislsnotmyname/odin-recipes" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
-								</li>
-								<li>
-									<span class="project-name" title="Fun With Flexbox">Landing Page</span>
-									<a href="./landing-page" class="live-examples">Preview</a>
-									<a href="https://github.com/thislsnotmyname/landing-page" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
-								</li>
-							</ul>
-							<h4>JavaScript</h4>
-							<ul>
-								<li>
-									<span class="project-name" title="Basic JavaScript/DOM">Rock, Paper, Scissors</span>
-									<a href="./rock-paper-scissors" class="live-examples">Preview</a>
-									<a href="https://github.com/thislsnotmyname/rock-paper-scissors" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
-								</li>
-								<li>
-									<span class="project-name" title="Fun With DOM">Etch-a-Sketch</span>
-									<a href="./etch-a-sketch" class="live-examples">Preview</a>
-									<a href="https://github.com/thislsnotmyname/etch-a-sketch" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
-								</li>
-								<li>
-									<span class="project-name" title="Put It All Together">Calculator</span>
-									<a href="./calculator" class="live-examples">Preview</a>
-									<a href="https://github.com/thislsnotmyname/calculator" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
-								</li>
-							</ul>
-						</section>
-						<section id="ruby" class="odin-project">
-							<h3>Ruby</h3>
-							<h4>Basic Ruby</h4>
-							<ul>
-								<li>
-									<span class="project-name" title="Basic Ruby: Computer Science Problems">Caesar Cipher</span>
-									<a href="https://github.com/thislsnotmyname/caesar_cipher" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
-								</li>
-								<li>
-									<span class="project-name" title="Basic Ruby: Computer Science Problems">Sub Strings</span>
-									<a href="https://github.com/thislsnotmyname/sub_strings" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
-								</li>
-								<li>
-									<span class="project-name" title="Basic Ruby: Computer Science Problems">Stock Picker</span>
-									<a href="https://github.com/thislsnotmyname/stock_picker" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
-								</li>
-								<li>
-									<span class="project-name" title="Basic Ruby: Computer Science Problems">Bubble Sort</span>
-									<a href="https://github.com/thislsnotmyname/bubble_sort" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
-								</li>
-							</ul>
-							<h4>Object-Oriented Programming</h4>
-							<ul>
-								<li>
-									<span class="project-name" title="Game-Making With Objects">Tic-Tac-Toe</span>
-									<a href="https://github.com/thislsnotmyname/tic_tac_toe" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
-								</li>
-								<li>
-									<span class="project-name" title="Game-Making With Objects: Nightmare Mode">Mastermind</span>
-									<a href="https://github.com/thislsnotmyname/mastermind" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
-								</li>
-							</ul>
-							<h4>Files and Serialization</h4>
-							<ul>
-								<li>
-									<span class="project-name" title="Working With CSV/Basic APIs">Event Manager</span>
-									<a href="https://github.com/thislsnotmyname/event_manager" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
-								</li>
-								<li>
-									<span class="project-name" title="Serialization: Game Saving and Loading">Hangman</span>
-									<a href="https://github.com/thislsnotmyname/hangman" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
-								</li>
-							</ul>
-							<h4>Advanced Ruby</h4>
-							<ul>
-								<li>
-									<span class="project-name" title="Reinventing The Wheel: Enumerable Edition">Custom Enumerables</span>
-									<a href="https://github.com/thislsnotmyname/custom_enumerable_project/blob/main/lib/my_enumerables.rb" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
-								</li>
-							</ul>
-							<h4>A Bit of Computer Science</h4>
-							<ul>
-								<li>
-									<span class="project-name" title="Recursion aka Recursion aka Recursion">Recursion</span>
-									<a href="https://github.com/thislsnotmyname/recursion" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
-								</li>
-								<li>
-									<span class="project-name" title="Data Structures: Linked List">Linked List</span>
-									<a href="https://github.com/thislsnotmyname/linked_list" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
-								</li>
-							</ul>
-						</section>
+						<details id="foundations" class="odin-project">
+							<summary><h3>Foundations</h3></summary>
+							<div>
+								<h4>HTML/CSS</h4>
+								<ul>
+									<li>
+										<span class="project-name" title="Basic HTML/CSS">Recipes</span>
+										<a href="./odin-recipes" class="live-examples">Preview</a>
+										<a href="https://github.com/thislsnotmyname/odin-recipes" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
+									</li>
+									<li>
+										<span class="project-name" title="Fun With Flexbox">Landing Page</span>
+										<a href="./landing-page" class="live-examples">Preview</a>
+										<a href="https://github.com/thislsnotmyname/landing-page" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
+									</li>
+								</ul>
+								<h4>JavaScript</h4>
+								<ul>
+									<li>
+										<span class="project-name" title="Basic JavaScript/DOM">Rock, Paper, Scissors</span>
+										<a href="./rock-paper-scissors" class="live-examples">Preview</a>
+										<a href="https://github.com/thislsnotmyname/rock-paper-scissors" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
+									</li>
+									<li>
+										<span class="project-name" title="Fun With DOM">Etch-a-Sketch</span>
+										<a href="./etch-a-sketch" class="live-examples">Preview</a>
+										<a href="https://github.com/thislsnotmyname/etch-a-sketch" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
+									</li>
+									<li>
+										<span class="project-name" title="Put It All Together">Calculator</span>
+										<a href="./calculator" class="live-examples">Preview</a>
+										<a href="https://github.com/thislsnotmyname/calculator" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
+									</li>
+								</ul>
+							</div>
+						</details>
+						<details id="ruby" class="odin-project">
+							<summary><h3>Ruby</h3></summary>
+							<div>
+								<h4>Basic Ruby</h4>
+								<ul>
+									<li>
+										<span class="project-name" title="Basic Ruby: Computer Science Problems">Caesar Cipher</span>
+										<a href="https://github.com/thislsnotmyname/caesar_cipher" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
+									</li>
+									<li>
+										<span class="project-name" title="Basic Ruby: Computer Science Problems">Sub Strings</span>
+										<a href="https://github.com/thislsnotmyname/sub_strings" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
+									</li>
+									<li>
+										<span class="project-name" title="Basic Ruby: Computer Science Problems">Stock Picker</span>
+										<a href="https://github.com/thislsnotmyname/stock_picker" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
+									</li>
+									<li>
+										<span class="project-name" title="Basic Ruby: Computer Science Problems">Bubble Sort</span>
+										<a href="https://github.com/thislsnotmyname/bubble_sort" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
+									</li>
+								</ul>
+								<h4>Object-Oriented Programming</h4>
+								<ul>
+									<li>
+										<span class="project-name" title="Game-Making With Objects">Tic-Tac-Toe</span>
+										<a href="https://github.com/thislsnotmyname/tic_tac_toe" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
+									</li>
+									<li>
+										<span class="project-name" title="Game-Making With Objects: Nightmare Mode">Mastermind</span>
+										<a href="https://github.com/thislsnotmyname/mastermind" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
+									</li>
+								</ul>
+								<h4>Files and Serialization</h4>
+								<ul>
+									<li>
+										<span class="project-name" title="Working With CSV/Basic APIs">Event Manager</span>
+										<a href="https://github.com/thislsnotmyname/event_manager" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
+									</li>
+									<li>
+										<span class="project-name" title="Serialization: Game Saving and Loading">Hangman</span>
+										<a href="https://github.com/thislsnotmyname/hangman" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
+									</li>
+								</ul>
+								<h4>Advanced Ruby</h4>
+								<ul>
+									<li>
+										<span class="project-name" title="Reinventing The Wheel: Enumerable Edition">Custom Enumerables</span>
+										<a href="https://github.com/thislsnotmyname/custom_enumerable_project/blob/main/lib/my_enumerables.rb" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
+									</li>
+								</ul>
+								<h4>A Bit of Computer Science</h4>
+								<ul>
+									<li>
+										<span class="project-name" title="Recursion aka Recursion aka Recursion">Recursion</span>
+										<a href="https://github.com/thislsnotmyname/recursion" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
+									</li>
+									<li>
+										<span class="project-name" title="Data Structures: Linked List">Linked List</span>
+										<a href="https://github.com/thislsnotmyname/linked_list" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
+									</li>
+								</ul>
+							</div>
+						</details>
 					</div>
 					<h3>Miscellaneous</h3>
 					<div class="misc-personal">
-						<section id="misc-personal" class="misc-personal">
-							<h3>Miscellaneous</h3>
-							<p class="legend">⭐ = featured</p>
-							<ul>
-								<li class="featured-list">
-									<span class="project-name featured-list" title="Portfolio website">jeremymeyers.dev</span>
-									<a href="./index.html" class="live-examples">Preview</a>
-									<a href="https://github.com/thislsnotmyname/thislsnotmyname.github.io" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
-								</li>
-							</ul>
-						</section>
+						<details id="misc-personal" class="misc-personal">
+							<summary><h3>Miscellaneous</h3></summary>
+							<div>
+								<p class="legend">⭐ = featured</p>
+								<ul>
+									<li class="featured-list">
+										<span class="project-name featured-list" title="Portfolio website">jeremymeyers<wbr>.dev</span>
+										<a href="./index.html" class="live-examples">Preview</a>
+										<a href="https://github.com/thislsnotmyname/thislsnotmyname.github.io" class="live-examples"><i class="github" alt="GitHub logo"></i>Code</a>
+									</li>
+								</ul>
+							</div>
+						</details>
 					</div>
 				</div>
+				</details>
 			</main>
 			<br>
 			<footer>

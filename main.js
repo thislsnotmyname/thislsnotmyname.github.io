@@ -1,5 +1,7 @@
 "use strict";
-// Jeremy Meyers, 08/29/2024
+// Jeremy Meyers, 08/31/2024
+
+let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 
 function changeDateOnPortfolioFeature() {
     const portfolioFeature = document.querySelectorAll("span.updated-date")[0];
@@ -8,12 +10,29 @@ function changeDateOnPortfolioFeature() {
         month: "2-digit",
         day: "2-digit"
     });
+
     portfolioFeature.textContent = currentDate;
 }
 
-function replaceHyphens() {
+function setMinWidthOnDetailsTags(vw) {
+    let details = document.querySelectorAll("div > details");
+
+    details.forEach(node => {
+        if (vw >= 1024) {
+            const openOrClose = (node.getAttribute("open") === null) ? "closed" : "open";
+
+            if (openOrClose === "closed") node.setAttribute("open", '');
+            node.style.flexBasis = `max(${node.clientWidth}px, 37.5%)`;
+            if (openOrClose === "closed") node.removeAttribute("open");
+        } else {
+            node.style.removeProperty("flex-basis");
+        }
+    });
+}
+
+function replaceHyphens(vw) {
     let academicYears = document.querySelectorAll(".academic-year p");
-    let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+
     academicYears.forEach(node => {
         if (vw >= 1024) {
             node.textContent = node.textContent.replace("-", "|");
@@ -23,8 +42,16 @@ function replaceHyphens() {
     });
 }
 
-window.addEventListener("resize", replaceHyphens);
+window.addEventListener("resize", () => {
+    vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+    replaceHyphens(vw);
+    setMinWidthOnDetailsTags(vw);
+});
 
-replaceHyphens();
-changeDateOnPortfolioFeature();
+window.addEventListener("load", () => {
+    replaceHyphens(vw);
+    setMinWidthOnDetailsTags(vw);
+    changeDateOnPortfolioFeature();
+});
+
 
