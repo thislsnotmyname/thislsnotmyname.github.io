@@ -254,7 +254,7 @@ li.featured-list {
 }
 /* Video and PDF pages */
 .backToHome {
-	font-family:'Courier New', Courier, monospace;
+	font-family: 'Courier New', Courier, monospace;
 	font-size: 1.25em;
 	font-weight: 700;
 	text-decoration: none;
@@ -335,6 +335,12 @@ footer a:hover {
 		display: grid;
 		grid-template-columns: 1fr 12.5% 1fr;
 		width: 87.5%;
+	}
+	.current-semester {
+		grid-column-start: span 3;
+	}
+	.current-semester > legend {
+		font-family: "Graduate", "Courier New", serif;
 	}
 	.academic-year p {
 		writing-mode: vertical-lr;
