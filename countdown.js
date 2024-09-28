@@ -35,5 +35,7 @@ const messages = [
 const beforeOrAfter = (daysTill > 0) ? Math.floor(Math.random() * 9) : Math.floor(Math.random() * 3) + 9;
 const message = messages[beforeOrAfter];
 if (Math.abs(daysTill) === 1) message.replace("days", "day");
-document.getElementById("message").innerHTML = message;
-document.getElementById("countdown").textContent = `${daysTill}`;
+if (document.getElementById("message") !== null) {
+    document.getElementById("message").innerHTML = message;
+    document.getElementById("countdown").textContent = `${daysTill}`;
+}
