@@ -62,11 +62,17 @@ header {
 	text-align: center;
 }
 abbr {
-	text-decoration: underline dashed #f3d1e9;
-	text-shadow: 2px 2px 3px #c52a94aa;
+	text-decoration: none;
+}
+abbr:after {
+	content: "ⓘ";
+	font-size: 0.75em;
+	display: inline-block;
+	transform: translate(25%, -50%);
+	text-shadow: 2px 2px 3px #c52a94cc;
 }
 abbr:hover {
-	text-decoration: underline dashed #29ABDF;
+	cursor: help;
 }
 /*nav {}*/
 /* Main stylings */
