@@ -184,6 +184,17 @@ figcaption a {
 	gap: 10px 0;
 	margin: 0 auto;
 }
+.live-examples-list li {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.live-examples-list li::before {
+	content: "•";
+	font-size: 1.5em;
+	margin: 0 0.3em 0 -0.9em;
+}
 #countdown {
 	font-family: "Graduate", "Courier New", serif;
 	font-weight: 700;
@@ -249,7 +260,7 @@ li.featured-list {
 .live-examples {
 	background-color: #237abd;
 	color: #e3e6ed;
-	align-self: stretch;
+	/* align-self: stretch; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
